@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日维度盯防·城市达成看板</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#ffffff; --ink:#1f2d3d; --sub:#6b7785;
+    --green:#2e9e5b; --red:#e0533d; --amber:#e6a23c; --line:#e3e8ef;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);padding:28px;}
+  h1{font-size:26px;font-weight:700;margin-bottom:4px;}
+  .meta{color:var(--sub);font-size:14px;margin-bottom:22px;}
+  .cards{display:flex;gap:16px;margin-bottom:24px;flex-wrap:wrap;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;min-width:150px;flex:1;}
+  .card .num{font-size:30px;font-weight:800;}
+  .card .lbl{color:var(--sub);font-size:13px;margin-top:4px;}
+  .card.ok .num{color:var(--green);}
+  .card.warn .num{color:var(--red);}
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line);}
+  th,td{padding:13px 16px;text-align:center;font-size:15px;border-bottom:1px solid var(--line);}
+  thead th{background:#eef2f7;color:var(--sub);font-weight:600;font-size:13px;}
+  tbody tr:last-child td{border-bottom:none;}
+  .tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700;}
+  .tag.ok{background:#e7f6ee;color:var(--green);}
+  .tag.warn{background:#fdecea;color:var(--red);}
+  .down{color:var(--red);font-weight:700;}
+  .up{color:var(--green);font-weight:700;}
+  .foot{margin-top:18px;color:var(--sub);font-size:13px;}
+</style>
+</head>
+<body>
+  <h1>日维度盯防 · 城市达成看板</h1>
+  <div class="meta">数据日期：2026-09-12 ｜ 板块：餐饮 / 零售 / 爆品团 / 新城 / 高校 ｜ 口径：T-1 实际</div>
+
+  <div class="cards">
+    <div class="card"><div class="num">8</div><div class="lbl">覆盖城市</div></div>
+    <div class="card ok"><div class="num">5</div><div class="lbl">达标城市</div></div>
+    <div class="card warn"><div class="num">3</div><div class="lbl">预警城市</div></div>
+    <div class="card"><div class="num">108.1</div><div class="lbl">平均综合得分</div></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>城市</th><th>订单达成率</th><th>代补力度(元/单)</th><th>综合得分</th><th>近7天Δ</th><th>状态</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>衡阳合并经营</td><td>96.5%</td><td>1.8</td><td>112</td><td class="up">+5</td><td><span class="tag ok">达标</span></td></tr>
+      <tr><td>武陵区</td><td>89.2%</td><td>2.4</td><td>101</td><td class="down">-13</td><td><span class="tag warn">预警</span></td></tr>
+      <tr><td>鼎城区</td><td>92.1%</td><td>2.0</td><td>108</td><td class="down">-7</td><td><span class="tag ok">达标</span></td></tr>
+      <tr><td>上虞区</td><td>94.0%</td><td>1.2</td><td>106</td><td class="down">-6</td><td><span class="tag warn">预警</span></td></tr>
+      <tr><td>江山</td><td>88.5%</td><td>2.6</td><td>108</td><td class="down">-7</td><td><span class="tag warn">预警</span></td></tr>
+      <tr><td>常山</td><td>85.3%</td><td>2.9</td><td>101</td><td class="down">-13</td><td><span class="tag warn">预警</span></td></tr>
+      <tr><td>嵊州</td><td>91.0%</td><td>1.9</td><td>110</td><td class="up">+3</td><td><span class="tag ok">达标</span></td></tr>
+      <tr><td>开化</td><td>87.7%</td><td>2.3</td><td>103</td><td class="down">-4</td><td><span class="tag ok">达标</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot">预警规则：订单达成率&lt;90% 且 综合得分近7天走弱。需 CM 重点介入并复盘过程动作。</div>
+</body>
+</html>
