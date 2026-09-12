@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>餐饮供给新签 · 日维度看板</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f5f7fa; color:#1f2d3d;
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:1000px; margin:0 auto; padding:28px 20px 56px; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  .sub { color:#6b7785; font-size:15px; margin-bottom:22px; }
+  .cards { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:22px; }
+  .card { background:#fff; border:1px solid #e3e8ef; border-radius:10px;
+    padding:16px 20px; min-width:150px; flex:1; }
+  .card .num { font-size:30px; font-weight:800; }
+  .card .lbl { color:#6b7785; font-size:13px; margin-top:4px; }
+  table { width:100%; border-collapse:collapse; background:#fff;
+    border:1px solid #e3e8ef; border-radius:10px; overflow:hidden; }
+  th,td { padding:14px 16px; text-align:left; font-size:15px; border-bottom:1px solid #eef2f7; }
+  th { background:#eef2f7; color:#6b7785; font-weight:600; }
+  td.city { font-weight:600; }
+  tr:last-child td { border-bottom:none; }
+  .pill { color:#fff; padding:3px 12px; border-radius:20px; font-size:13px; font-weight:600; }
+  .warn { margin-top:22px; background:#fff5f3; border:1px solid #ffd9d2;
+    color:#c53a22; padding:16px 20px; border-radius:10px; font-size:15px; line-height:1.7; }
+  .warn b { color:#8f1f0c; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🍜 餐饮供给新签 · 日维度看板</h1>
+    <div class="sub">数据截至 2026年09月12日 ｜ 统计口径：月累计 ｜ 时间进度 44.0%（预期达成线）</div>
+    <div class="cards">
+      <div class="card"><div class="num">9</div><div class="lbl">覆盖城市</div></div>
+      <div class="card"><div class="num" style="color:#00A854">1</div><div class="lbl">达标</div></div>
+      <div class="card"><div class="num" style="color:#E6A700">1</div><div class="lbl">接近</div></div>
+      <div class="card"><div class="num" style="color:#E0533D">7</div><div class="lbl">预警</div></div>
+      <div class="card"><div class="num">27.6%</div><div class="lbl">平均综合完成率</div></div>
+    </div>
+    <table>
+      <thead><tr>
+        <th>城市</th><th>综合完成率</th><th>常规达成/目标</th>
+        <th>常规完成率</th><th>战略完成率</th><th>状态</th>
+      </tr></thead>
+      <tbody>
+      <tr>
+        <td class="city">衡阳</td>
+        <td style="color:#E0533D;font-weight:700">27.8%</td>
+        <td>75/192</td>
+        <td style="color:#E6A700">38.9%</td>
+        <td style="color:#E0533D">16.7%</td>
+        <td><span class="pill" style="background:#E0533D">预警</span></td>
+      </tr>
+      <tr>
+        <td class="city">鼎城区</td>
+        <td style="color:#E0533D;font-weight:700">15.7%</td>
+        <td>10/54</td>
+        <td style="color:#E0533D">17.8%</td>
+        <td style="color:#E0533D">13.6%</td>
+        <td><span class="pill" style="background:#E0533D">预警</span></td>
+      </tr>
+      <tr>
+        <td class="city">武陵区</td>
+        <td style="color:#E0533D;font-weight:700">10.9%</td>
+        <td>30/193</td>
+        <td style="color:#E0533D">15.6%</td>
+        <td style="color:#E0533D">6.2%</td>
+        <td><span class="pill" style="background:#E0533D">预警</span></td>
+      </tr>
+      <tr>
+        <td class="city">上虞区</td>
+        <td style="color:#E0533D;font-weight:700">28.4%</td>
+        <td>39/115</td>
+        <td style="color:#E6A700">34.0%</td>
+        <td style="color:#E0533D">22.8%</td>
+        <td><span class="pill" style="background:#E0533D">预警</span></td>
+      </tr>
+      <tr>
+        <td class="city">江山</td>
+        <td style="color:#E6A700;font-weight:700">42.6%</td>
+        <td>10/23</td>
+        <td style="color:#E6A700">44.0%</td>
+        <td style="color:#E6A700">41.2%</td>
+        <td><span class="pill" style="background:#E6A700">接近</span></td>
+      </tr>
+      <tr>
+        <td class="city">嵊州</td>
+        <td style="color:#E0533D;font-weight:700">18.7%</td>
+        <td>23/74</td>
+        <td style="color:#E6A700">31.2%</td>
+        <td style="color:#E0533D">6.2%</td>
+        <td><span class="pill" style="background:#E0533D">预警</span></td>
+      </tr>
+      <tr>
+        <td class="city">常山</td>
+        <td style="color:#E0533D;font-weight:700">10.3%</td>
+        <td>2/27</td>
+        <td style="color:#E0533D">5.6%</td>
+        <td style="color:#E0533D">15.0%</td>
+        <td><span class="pill" style="background:#E0533D">预警</span></td>
+      </tr>
+      <tr>
+        <td class="city">开化</td>
+        <td style="color:#00A854;font-weight:700">63.8%</td>
+        <td>7/9</td>
+        <td style="color:#00A854">82.7%</td>
+        <td style="color:#00A854">45.0%</td>
+        <td><span class="pill" style="background:#00A854">达标</span></td>
+      </tr>
+      <tr>
+        <td class="city">津市</td>
+        <td style="color:#E0533D;font-weight:700">30.2%</td>
+        <td>6/20</td>
+        <td style="color:#E0533D">30.3%</td>
+        <td style="color:#E0533D">30.0%</td>
+        <td><span class="pill" style="background:#E0533D">预警</span></td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="warn">
+      ⚠️ <b>需重点跟进（综合完成率未达 30.8% 预期线）</b>：衡阳、鼎城区、武陵区、上虞区、嵊州、常山、津市<br>
+      请以上城市 CM 尽快反馈追赶计划。
+    </div>
+  </div>
+</body>
+</html>
